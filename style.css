@@ -56,7 +56,21 @@ button.recog:hover {
 }
 
 div.section {
-  font-size: 20px;
   margin: 12px 0px;
+}
+
+#types {
+  font-size: 20px;
   border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  color: #6C6C6C;
+}
+
+#items {
+  font-size: 20px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  color: #6C6C6C;
 }
