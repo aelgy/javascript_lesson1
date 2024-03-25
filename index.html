@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Lesson1 practice</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <input type="text" id="name" placeholder="請輸入姓名，再按訂購">
+  <div id="buttonSection">
+    <button class='order' onclick="order()">
+      我要訂購
+    </button>
+
+    <button class='recog' onclick="recognize()">
+      認識工廠
+    </button>
+  </div>
+
+  <div id="orderSection">
+    <p id="orderTitle">
+      您的訂單
+    </p>
+    <hr id="orderHr">
+    <p>
+      顧客姓名：<span id=nameCheck></span>
+    </p>
+  </div>
+</body>
+
+</html>

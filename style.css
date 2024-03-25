@@ -1,0 +1,56 @@
+button.order {
+  font-size: 20px;
+  background-color: #FFE153;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+button.order:hover {
+  font-size: 24px;
+  background-color: #D9B300;
+  transition-duration: 0.2s;
+}
+
+button.recog {
+  font-size: 20px;
+  background-color: #FFE153;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+button.recog:hover {
+  font-size: 24px;
+  background-color: #D9B300;
+  transition-duration: 0.2s;
+}
+
+#buttonSection {
+  margin: 24px 0;
+}
+
+#name {
+  font-size: 20px;
+  border-radius: 10px;
+  border-width: 1px;
+  text-align: center;
+}
+
+#orderSection {
+  background-color: #EBD6D6;
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  padding: 8px 0px;
+}
+
+#orderHr {
+  border-color: black;
+}
+
+#orderTitle {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  align-items: center;
+  margin: 8px 0px 8px 0px;
+}
