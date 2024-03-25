@@ -11,25 +11,48 @@
 
 <body>
   <input type="text" id="name" placeholder="請輸入姓名，再按訂購">
-  <div id="buttonSection">
-    <button class='order' onclick="order()">
-      我要訂購
-    </button>
-
-    <button class='recog' onclick="recognize()">
-      認識工廠
-    </button>
+  <div class="section">
+    <select id="types">
+      <option value="" selected disabled>款式</option>
+      <option value="man">男裝</option>
+      <option value="women">女裝</option>
+    </select>
   </div>
+  <div class="section">
+    <div>
+      <select id="items">
+        <option value="" selected disabled>類型</option>
+        <option value="jacket">外套</option>
+        <option value="cloth">上衣</option>
+        <option value="pants">下身</option>
+      </select>
+    </div>
+    <div id="buttonSection">
+      <button class='order' onclick="order()">
+        我要訂購
+      </button>
 
-  <div id="orderSection">
-    <p id="orderTitle">
-      您的訂單
-    </p>
-    <hr id="orderHr">
-    <p>
-      顧客姓名：<span id=nameCheck></span>
-    </p>
-  </div>
+      <button class='recog' onclick="recognize()">
+        認識工廠
+      </button>
+    </div>
+
+    <div id="orderSection">
+      <p id="orderTitle">
+        您的訂單
+      </p>
+      <hr id="orderHr">
+      <p>
+        顧客姓名：<span id=nameCheck></span>
+      </p>
+      <p>
+        服裝分類：<span id="userTypes"></span>
+      </p>
+      <p>
+        服裝類型：<span id="userItems"></span>
+      </p>
+    </div>
+
 </body>
 
 </html>
