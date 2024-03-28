@@ -4,10 +4,18 @@ function order() {
   const typesValue = document.getElementById('types').value;
   const itemsValue = document.getElementById('items').value;
   const itemNumbers = document.getElementById('number').value;
-  if (str.trim() === "") return alert("請輸入姓名");
-  if (typesValue === "") return alert("請選擇款式");
-  if (itemsValue === "") return alert("請選擇類型");
-  if (itemNumbers === "") return alert("請填寫數量")
+  if (str.trim() === "") return alert("煩請填寫您的姓名");
+  if (typesValue === "") return alert("煩請選擇款式");
+  if (itemsValue === "") return alert("煩請選擇類型");
+  if (itemNumbers === "" || itemNumbers <= 0) {
+    return alert("煩請輸入訂購數量")
+  }
+  else if (itemNumbers < 100) {
+    return alert("抱歉，我們工廠的最低出貨量是 100 件")
+  } else if (itemNumbers > 5000) {
+    return alert("抱歉，我們工廠的最高出貨量是 5000 件")
+  }
+
   // 如果驗證沒問題就可以跑後面的
   alert(str + "，謝謝您對我們的衣服有興趣！請致電 0987-654-321，會有專人提供您報價！");
   promoteAlert()
