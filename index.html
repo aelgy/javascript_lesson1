@@ -26,6 +26,8 @@
         <option value="cloth">上衣</option>
         <option value="pants">下身</option>
       </select>
+      <!-- 數量 -->
+      <input type="number" id="number" placeholder="請填寫數量">
     </div>
     <div id="buttonSection">
       <button class='order' onclick="order()">
@@ -36,22 +38,30 @@
         認識工廠
       </button>
     </div>
+  </div>
 
-    <div id="orderSection">
-      <p id="orderTitle">
-        您的訂單
-      </p>
-      <hr id="orderHr">
-      <p>
-        顧客姓名：<span id=nameCheck></span>
-      </p>
-      <p>
-        服裝分類：<span id="userTypes"></span>
-      </p>
-      <p>
-        服裝類型：<span id="userItems"></span>
-      </p>
-    </div>
+  <div id="orderList" style="display: none">
+    <p id="orderTitle">
+      您的訂單
+    </p>
+    <hr id="orderHr">
+    <p>
+      顧客姓名：<span id=nameCheck></span>
+    </p>
+    <p>
+      服裝分類：<span id="userTypes"></span>
+    </p>
+    <p>
+      服裝類型：<span id="userItems"></span>
+    </p>
+    <p>
+      訂購數量：<span id="itemNums"></span>
+    </p>
+    <p>
+      初步估價：<span id="totalNums"></span>
+    </p>
+  </div>
+
 
 </body>
 
