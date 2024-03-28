@@ -19,26 +19,27 @@
     </select>
   </div>
   <div class="section">
-    <div>
-      <select id="items">
-        <option value="" selected disabled>類型</option>
-        <option value="jacket">外套</option>
-        <option value="cloth">上衣</option>
-        <option value="pants">下身</option>
-      </select>
-      <!-- 數量 -->
-      <input type="number" id="number" placeholder="請填寫數量">
-    </div>
-    <div id="buttonSection">
-      <button class='order' onclick="order()">
-        我要訂購
-      </button>
-
-      <button class='recog' onclick="recognize()">
-        認識工廠
-      </button>
-    </div>
+    <select id="items">
+      <option value="" selected disabled>類型</option>
+      <option value="jacket">外套</option>
+      <option value="cloth">上衣</option>
+      <option value="pants">下身</option>
+    </select>
   </div>
+  <!-- 數量 -->
+  <div class="section">
+    <input type="number" id="number" placeholder="請填寫數量">
+  </div>
+  <div id="buttonSection">
+    <button class='order' onclick="order()">
+      我要訂購
+    </button>
+
+    <button class='recog' onclick="recognize()">
+      認識工廠
+    </button>
+  </div>
+
 
   <div id="orderList" style="display: none">
     <p id="orderTitle">
@@ -61,7 +62,6 @@
       初步估價：<span id="totalNums"></span>
     </p>
   </div>
-
 
 </body>
 

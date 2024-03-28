@@ -3,9 +3,11 @@ function order() {
   const str = document.getElementById('name').value;
   const typesValue = document.getElementById('types').value;
   const itemsValue = document.getElementById('items').value;
+  const itemNumbers = document.getElementById('number').value;
   if (str.trim() === "") return alert("請輸入姓名");
   if (typesValue === "") return alert("請選擇款式");
   if (itemsValue === "") return alert("請選擇類型");
+  if (itemNumbers === "") return alert("請填寫數量")
   // 如果驗證沒問題就可以跑後面的
   alert(str + "，謝謝您對我們的衣服有興趣！請致電 0987-654-321，會有專人提供您報價！");
   promoteAlert()
@@ -29,7 +31,7 @@ function promoteAlert() {
   } else {
     alert("最近剛好是工廠週年慶，只要您今天來電下單，我們將贈送您美麗圍巾！")
     const womenPrice = 500;
-    const totalNums = women * itemNumbers;
+    const totalNums = womenPrice * itemNumbers;
     document.getElementById('totalNums').textContent = totalNums;
   }
 }

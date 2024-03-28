@@ -35,8 +35,8 @@ button.recog:hover {
   text-align: center;
 }
 
-#orderSection {
-  background-color: #EBD6D6;
+#orderList {
+  background-color: #D0D0D0;
   width: 200px;
   height: 300px;
   border-radius: 10px;
@@ -73,4 +73,11 @@ div.section {
   width: 200px;
   text-align: center;
   color: #6C6C6C;
+}
+
+#number {
+  font-size: 20px;
+  border-radius: 10px;
+  border-width: 1px;
+  text-align: center;
 }
